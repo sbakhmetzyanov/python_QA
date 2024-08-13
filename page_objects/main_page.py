@@ -17,6 +17,7 @@ class MainPage(BasePage):
     PRODUCT_PRICE_NEW = By.CLASS_NAME, "price-new"
     PRODUCT_PRICE_TAX = By.CLASS_NAME, "price-tax"
 
+
     @allure.step("Click on Cart dropdown")
     def click_cart_dropdown(self):
         self.logger.info("Click on Cart dropdown")
@@ -59,6 +60,7 @@ class MainPage(BasePage):
             self.get_elements(self.FEATURED_PRODUCT_NAME)[index].click()
         return self
 
+
     @allure.step("Add a random product to cart")
     def add_to_cart_random_product(self):
         self.logger.info("Add a random product to cart")
@@ -68,6 +70,7 @@ class MainPage(BasePage):
                                        f"div.col.mb-3:nth-child({i}) button[type='submit']:nth-child(1)"))
         AC(self.browser).move_to_element(target_btn).click(target_btn).perform()
         return self
+
 
     @allure.step("Check display of price and tax in Euro")
     def check_prices_in_euro(self):

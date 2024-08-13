@@ -1,6 +1,5 @@
 import allure
 from selenium.webdriver.common.by import By
-
 from page_objects.base_page import BasePage
 
 
@@ -12,6 +11,7 @@ class AddProductPage(BasePage):
     SEO = By.LINK_TEXT, "SEO"
     KEYWORD = By.CSS_SELECTOR, "input[name='product_seo_url[0][1]']"
     SAVE_PRODUCT_BTN = By.CSS_SELECTOR, "i[class='fa-solid fa-floppy-disk']"
+
 
     @allure.step("Enter 'Test Product' in input Product Name")
     def fill_product_name(self):
@@ -52,5 +52,6 @@ class AddProductPage(BasePage):
     @allure.step("Click tab Save")
     def click_save_product(self):
         self.logger.info("Click on the Save button")
+
         self.click(self.SAVE_PRODUCT_BTN)
         return self
