@@ -1,0 +1,8 @@
+INFO     test_admin_page_username_input:conftest.py:46 ===> Test test_admin_page_username_input started at 2024-08-13 22:00:37.259274
+INFO     test_admin_page_username_input:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="52114951a713ea45eaeb15f7e1184cdb")> started
+INFO     test_admin_page_username_input:admin_page.py:22 Open admin page
+INFO     test_admin_page_username_input:admin_page.py:28 Wait for the login card element in the admin page
+INFO     test_admin_page_username_input:admin_page.py:42 Check label of Username input
+INFO     test_admin_page_username_input:admin_page.py:54 Check icon of Username input
+INFO     test_admin_page_username_input:admin_page.py:66 Check placeholder of Username input
+INFO     test_admin_page_username_input:conftest.py:78 ===> Test test_admin_page_username_input finished at 2024-08-13 22:00:40.373727

@@ -1,0 +1,6 @@
+INFO     test_admin_page_login_button:conftest.py:46 ===> Test test_admin_page_login_button started at 2024-08-13 22:00:43.419856
+INFO     test_admin_page_login_button:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="f661b646d8cbfb9a0baf2f16ed9ef5b7")> started
+INFO     test_admin_page_login_button:admin_page.py:22 Open admin page
+INFO     test_admin_page_login_button:admin_page.py:28 Wait for the login card element in the admin page
+INFO     test_admin_page_login_button:admin_page.py:76 Check the display of the Login button
+INFO     test_admin_page_login_button:conftest.py:78 ===> Test test_admin_page_login_button finished at 2024-08-13 22:00:46.223468
