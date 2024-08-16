@@ -1,4 +1,0 @@
-INFO     test_product_page_iphone_card_url:conftest.py:46 ===> Test test_product_page_iphone_card_url started at 2024-08-13 22:03:46.073459
-INFO     test_product_page_iphone_card_url:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="daac3dca6cfb3a9e7e3c36bfccbbb637")> started
-INFO     test_product_page_iphone_card_url:main_page.py:55 Click on the recommended product card
-INFO     test_product_page_iphone_card_url:conftest.py:78 ===> Test test_product_page_iphone_card_url finished at 2024-08-13 22:03:49.272660
