@@ -1,0 +1,7 @@
+INFO     test_admin_page_alert:conftest.py:46 ===> Test test_admin_page_alert started at 2024-08-13 22:00:46.231514
+INFO     test_admin_page_alert:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="547d798ce9f888c1bacb68a70e267756")> started
+INFO     test_admin_page_alert:admin_page.py:22 Open admin page
+INFO     test_admin_page_alert:admin_page.py:28 Wait for the login card element in the admin page
+INFO     test_admin_page_alert:admin_page.py:83 Click on the Login button
+INFO     test_admin_page_alert:alert_danger_element.py:19 Check text in danger alert
+INFO     test_admin_page_alert:conftest.py:78 ===> Test test_admin_page_alert finished at 2024-08-13 22:00:50.208913

@@ -1,0 +1,5 @@
+INFO     test_catalog_page_desktops_header:conftest.py:46 ===> Test test_catalog_page_desktops_header started at 2024-08-13 22:01:10.594755
+INFO     test_catalog_page_desktops_header:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="4cc24c318b0d978f401cd850963f4798")> started
+INFO     test_catalog_page_desktops_header:catalog_desktops_page.py:19 Open the Desktops catalog page
+INFO     test_catalog_page_desktops_header:catalog_desktops_page.py:31 Check display of the Desktops header
+INFO     test_catalog_page_desktops_header:conftest.py:78 ===> Test test_catalog_page_desktops_header finished at 2024-08-13 22:01:13.389676

@@ -1,5 +1,4 @@
-import time
-
+import allure
 from page_objects.add_product_page import AddProductPage
 from page_objects.admin_page import AdminPage
 from page_objects.admin_products_page import AdminProductsPage
@@ -11,6 +10,8 @@ from page_objects.shopping_cart_page import ShoppingCartPage
 from page_objects.top_menu_element import TopMenu
 
 
+@allure.feature("Admin page")
+@allure.title("Checking the login and logout in the admin panel")
 def test_login_and_logout_to_admin_page(browser):
     AdminPage(browser) \
         .open_admin_page() \
@@ -20,6 +21,8 @@ def test_login_and_logout_to_admin_page(browser):
         .wait_logged_out()
 
 
+@allure.feature("Main page")
+@allure.title("Checking the addition of a random product to the cart from the main page")
 def test_add_to_cart_random_product(browser):
     MainPage(browser).add_to_cart_random_product()
     AlertSuccessElement(browser) \
@@ -30,6 +33,8 @@ def test_add_to_cart_random_product(browser):
     ShoppingCartPage(browser).check_product_in_cart()
 
 
+@allure.feature("Main page")
+@allure.title("Checking that when switching currencies, the prices of goods change on the main page")
 def test_main_page_switch_currencies(browser):
     TopMenu(browser) \
         .click_currency_dropdown() \
@@ -48,6 +53,8 @@ def test_main_page_switch_currencies(browser):
         .check_prices_in_dollar()
 
 
+@allure.feature("Catalog page")
+@allure.title("Checking that when switching currencies, the prices of goods change in the catalog")
 def test_catalog_page_switch_currencies(browser):
     CatalogDesktopsPage(browser) \
         .open_catalog_desktops_page()
@@ -68,6 +75,8 @@ def test_catalog_page_switch_currencies(browser):
         .check_prices_in_dollar()
 
 
+@allure.feature("Admin page")
+@allure.title("Checking the addition of a new product in the admin section")
 def test_add_new_product_admin_page(browser):
     AdminPage(browser) \
         .open_admin_page() \
@@ -87,6 +96,8 @@ def test_add_new_product_admin_page(browser):
     AlertSuccessElement(browser).check_alert_success_modified_product()
 
 
+@allure.feature("Admin page")
+@allure.title("Checking the deletion of the product in the admin section")
 def test_delete_product_admin_page(browser):
     AdminPage(browser) \
         .open_admin_page() \
@@ -102,6 +113,8 @@ def test_delete_product_admin_page(browser):
     AlertSuccessElement(browser).check_alert_success_modified_product()
 
 
+@allure.feature("Registration page")
+@allure.title("Checking the registration of a new user")
 def test_registration_user(browser):
     RegisterPage(browser) \
         .open_register_page() \
@@ -112,6 +125,8 @@ def test_registration_user(browser):
         .wait_success_registration()
 
 
+@allure.feature("Main page")
+@allure.title("Checking currency switching from the top menu")
 def test_switching_currencies(browser):
     TopMenu(browser) \
         .click_currency_dropdown() \

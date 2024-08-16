@@ -1,0 +1,6 @@
+INFO     test_catalog_page_desktops_select_list_view:conftest.py:46 ===> Test test_catalog_page_desktops_select_list_view started at 2024-08-13 22:01:21.556857
+INFO     test_catalog_page_desktops_select_list_view:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="53207ae4240a3258009785af5e3e3907")> started
+INFO     test_catalog_page_desktops_select_list_view:catalog_desktops_page.py:19 Open the Desktops catalog page
+INFO     test_catalog_page_desktops_select_list_view:catalog_desktops_page.py:60 Activate product list view
+INFO     test_catalog_page_desktops_select_list_view:catalog_desktops_page.py:66 Check product list display
+INFO     test_catalog_page_desktops_select_list_view:conftest.py:78 ===> Test test_catalog_page_desktops_select_list_view finished at 2024-08-13 22:01:24.942900
