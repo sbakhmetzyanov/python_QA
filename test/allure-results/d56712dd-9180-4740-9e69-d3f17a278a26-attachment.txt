@@ -1,8 +1,0 @@
-INFO     test_admin_page_password_input:conftest.py:46 ===> Test test_admin_page_password_input started at 2024-08-13 22:00:40.384223
-INFO     test_admin_page_password_input:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="ab2e05b2ff39ac8b28c7ca4540901a7f")> started
-INFO     test_admin_page_password_input:admin_page.py:22 Open admin page
-INFO     test_admin_page_password_input:admin_page.py:28 Wait for the login card element in the admin page
-INFO     test_admin_page_password_input:admin_page.py:46 Check label of Password input
-INFO     test_admin_page_password_input:admin_page.py:58 Check icon of Password input
-INFO     test_admin_page_password_input:admin_page.py:70 Check placeholder of Password input
-INFO     test_admin_page_password_input:conftest.py:78 ===> Test test_admin_page_password_input finished at 2024-08-13 22:00:43.413139

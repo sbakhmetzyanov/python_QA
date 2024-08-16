@@ -1,6 +1,0 @@
-INFO     test_register_page_go_to_login_page:conftest.py:46 ===> Test test_register_page_go_to_login_page started at 2024-08-13 22:04:30.248796
-INFO     test_register_page_go_to_login_page:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="756581e1b6fb499f62eafd7fc6d4a1d1")> started
-INFO     test_register_page_go_to_login_page:register_page.py:27 Open registration page
-INFO     test_register_page_go_to_login_page:register_page.py:65 Check the text of the link to the login page
-INFO     test_register_page_go_to_login_page:register_page.py:73 Click on the link to the login page
-INFO     test_register_page_go_to_login_page:conftest.py:78 ===> Test test_register_page_go_to_login_page finished at 2024-08-13 22:04:33.892477

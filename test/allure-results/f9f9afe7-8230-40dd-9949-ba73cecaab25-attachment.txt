@@ -1,4 +1,0 @@
-INFO     test_main_page_carousel_1:conftest.py:46 ===> Test test_main_page_carousel_1 started at 2024-08-13 22:01:48.187248
-INFO     test_main_page_carousel_1:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="916f50ee400dc46893fd7483d8448fd8")> started
-INFO     test_main_page_carousel_1:main_page.py:35 Check the number of banners in the carousel
-INFO     test_main_page_carousel_1:conftest.py:78 ===> Test test_main_page_carousel_1 finished at 2024-08-13 22:01:50.474541

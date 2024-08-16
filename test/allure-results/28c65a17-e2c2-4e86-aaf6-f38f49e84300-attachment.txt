@@ -1,5 +1,0 @@
-INFO     test_main_page_empty_cart_text:conftest.py:46 ===> Test test_main_page_empty_cart_text started at 2024-08-13 22:01:40.461196
-INFO     test_main_page_empty_cart_text:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="6981a5bc2a8972b82253548d74b1dde9")> started
-INFO     test_main_page_empty_cart_text:main_page.py:22 Click on Cart dropdown
-INFO     test_main_page_empty_cart_text:main_page.py:28 Check the text in the dropdown of an empty cart
-INFO     test_main_page_empty_cart_text:conftest.py:78 ===> Test test_main_page_empty_cart_text finished at 2024-08-13 22:01:43.645700

@@ -1,5 +1,0 @@
-INFO     test_product_page_iphone_rating:conftest.py:46 ===> Test test_product_page_iphone_rating started at 2024-08-13 22:03:54.154314
-INFO     test_product_page_iphone_rating:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="30b7628344fd7858c42e79267fe0bb75")> started
-INFO     test_product_page_iphone_rating:product_page.py:16 Open iPhone product page
-INFO     test_product_page_iphone_rating:product_page.py:36 Check rating in iPhone product page
-INFO     test_product_page_iphone_rating:conftest.py:78 ===> Test test_product_page_iphone_rating finished at 2024-08-13 22:03:56.705302

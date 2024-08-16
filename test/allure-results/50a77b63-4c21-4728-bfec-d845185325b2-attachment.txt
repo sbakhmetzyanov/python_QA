@@ -1,5 +1,0 @@
-INFO     test_catalog_page_desktops_menu_elements:conftest.py:46 ===> Test test_catalog_page_desktops_menu_elements started at 2024-08-13 22:01:15.668087
-INFO     test_catalog_page_desktops_menu_elements:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="61bf486f322e8bce5ea70e4d6155c014")> started
-INFO     test_catalog_page_desktops_menu_elements:catalog_desktops_page.py:19 Open the Desktops catalog page
-INFO     test_catalog_page_desktops_menu_elements:catalog_desktops_page.py:38 Check the count of items in the menu
-INFO     test_catalog_page_desktops_menu_elements:conftest.py:78 ===> Test test_catalog_page_desktops_menu_elements finished at 2024-08-13 22:01:18.274113
