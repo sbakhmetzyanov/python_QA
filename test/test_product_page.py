@@ -3,7 +3,6 @@ from page_objects.main_page import MainPage
 from page_objects.product_page import ProductPage
 
 
-
 @allure.feature("Product page")
 @allure.title("Checking the transition to the iPhone product page")
 def test_product_page_iphone_card_url(browser):

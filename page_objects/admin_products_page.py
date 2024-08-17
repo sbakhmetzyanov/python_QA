@@ -1,5 +1,7 @@
+
 import allure
 from selenium.webdriver.common.by import By
+
 from page_objects.base_page import BasePage
 
 
@@ -12,14 +14,12 @@ class AdminProductsPage(BasePage):
     CHECKBOX_PRODUCT = By.CSS_SELECTOR, "table > tbody > tr > td:nth-child(1) > input"
     DELETE_BTN = By.CSS_SELECTOR, "i[class='fa-regular fa-trash-can']"
 
-    
     @allure.step("Open Products section of menu")
     def open_products_section(self):
         self.logger.info("Open Products section of menu")
         self.click(self.MENU_CATALOG)
         self.click(self.MENU_PRODUCTS)
         return self
-
 
     @allure.step("Click on the add new product button")
     def click_add_new_product(self):
