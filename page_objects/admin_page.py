@@ -16,7 +16,6 @@ class AdminPage(BasePage):
     PASS_INPUT = By.ID, "input-password"
     LOGOUT_BTN = By.ID, "nav-logout"
 
-
     @allure.step("Open admin page")
     def open_admin_page(self):
         self.logger.info("Open admin page")
