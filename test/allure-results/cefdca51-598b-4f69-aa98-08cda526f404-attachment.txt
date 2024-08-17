@@ -1,6 +1,0 @@
-INFO     test_register_page_subscribe_checkbox:conftest.py:46 ===> Test test_register_page_subscribe_checkbox started at 2024-08-13 22:04:27.167356
-INFO     test_register_page_subscribe_checkbox:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="d7505f7c37641f377f65ff6230986c19")> started
-INFO     test_register_page_subscribe_checkbox:register_page.py:27 Open registration page
-INFO     test_register_page_subscribe_checkbox:register_page.py:52 Click on the newsletter checkbox
-INFO     test_register_page_subscribe_checkbox:register_page.py:58 Check activation of the newsletter checkbox
-INFO     test_register_page_subscribe_checkbox:conftest.py:78 ===> Test test_register_page_subscribe_checkbox finished at 2024-08-13 22:04:30.242107

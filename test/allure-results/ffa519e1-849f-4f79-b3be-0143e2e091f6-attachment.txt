@@ -1,6 +1,0 @@
-INFO     test_admin_page_header:conftest.py:46 ===> Test test_admin_page_header started at 2024-08-13 22:00:33.041675
-INFO     test_admin_page_header:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="eddfa8428f9eaa14f4b2f853d3ea0df0")> started
-INFO     test_admin_page_header:admin_page.py:22 Open admin page
-INFO     test_admin_page_header:admin_page.py:28 Wait for the login card element in the admin page
-INFO     test_admin_page_header:admin_page.py:34 Check header display
-INFO     test_admin_page_header:conftest.py:78 ===> Test test_admin_page_header finished at 2024-08-13 22:00:37.251653

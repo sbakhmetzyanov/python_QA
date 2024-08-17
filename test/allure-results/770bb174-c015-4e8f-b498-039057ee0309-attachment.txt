@@ -1,9 +1,0 @@
-INFO     test_switching_currencies:conftest.py:46 ===> Test test_switching_currencies started at 2024-08-13 22:05:36.540147
-INFO     test_switching_currencies:conftest.py:65 Browser <selenium.webdriver.chrome.webdriver.WebDriver (session="582b4ad4ad451b4a4a22226faef1bb42")> started
-INFO     test_switching_currencies:top_menu_element.py:28 Click on Currency dropdown
-INFO     test_switching_currencies:top_menu_element.py:42 Click on Euro currency
-INFO     test_switching_currencies:top_menu_element.py:28 Click on Currency dropdown
-INFO     test_switching_currencies:top_menu_element.py:48 Click on Pound currency
-INFO     test_switching_currencies:top_menu_element.py:28 Click on Currency dropdown
-INFO     test_switching_currencies:top_menu_element.py:54 Click on Dollar currency
-INFO     test_switching_currencies:conftest.py:78 ===> Test test_switching_currencies finished at 2024-08-13 22:05:40.228327

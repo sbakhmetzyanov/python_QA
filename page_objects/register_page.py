@@ -22,6 +22,7 @@ class RegisterPage(BasePage):
     CBOX_AGREEMENT = By.CSS_SELECTOR, "input[name='agree']"
     H1_SUCCESS_REG = By.CSS_SELECTOR, "#content h1"
 
+
     @allure.step("Open registration page")
     def open_register_page(self):
         self.logger.info("Open registration page")

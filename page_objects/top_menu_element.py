@@ -23,6 +23,7 @@ class TopMenu:
         AC(self.browser).move_to_element(cart_link).click(cart_link).perform()
         return self
 
+
     @allure.step("Click on Currency dropdown")
     def click_currency_dropdown(self):
         self.logger.info("Click on Currency dropdown")
