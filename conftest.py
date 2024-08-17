@@ -3,29 +3,20 @@ import allure
 import logging
 import pytest
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.firefox.service import Service as FFService
 from selenium.webdriver.firefox.options import Options as FFOptions
 
 
 def pytest_addoption(parser):
     parser.addoption(
-        "--launch_mode", default="remote", choices=["remote", "local"]
+        "--browser", default="ch", choices=["ch", "ya", "ff"]
     )
-    parser.addoption(
-        "--browser_local", default="ch", choices=["ch", "ff"]
-    )
-    parser.addoption(
-        "--browser_remote", default="chrome", choices=["chrome", "firefox", "safari"]
-    )
-    parser.addoption("--bv_remote", action="store", default="127.0")
-    parser.addoption("--vnc", action="store_true")
-    parser.addoption("--executor", action="store", default="127.0.0.1")
     parser.addoption(
         "--headless", action="store_true"
     )
-    parser.addoption("--url", action="store", default="http://192.168.1.75:8081")
+    parser.addoption("--url", action="store", default="http://localhost")
     parser.addoption("--log_level", action="store", default="INFO")
 
 
@@ -41,60 +32,32 @@ def pytest_runtest_makereport(item, call):
 
 @pytest.fixture
 def browser(request):
-    launch_mode = request.config.getoption("--launch_mode")
-    browser_local = request.config.getoption("--browser_local")
+    browser_name = request.config.getoption("--browser")
     headless_mode = request.config.getoption("--headless")
     url = request.config.getoption("--url")
     log_level = request.config.getoption("--log_level")
-    browser_remote = request.config.getoption("--browser_remote")
-    bv_remote = request.config.getoption("--bv_remote")
-    vnc = request.config.getoption("--vnc")
-    executor = request.config.getoption("--executor")
-    executor_url = f"http://{executor}:4444/wd/hub"
-    log_directory = "tests/logs/"
+
     logger = logging.getLogger(request.node.name)
-    file_handler = logging.FileHandler(f"../{log_directory}/{request.node.name}.log")
+    file_handler = logging.FileHandler(f"logs/{request.node.name}.log")
     file_handler.setFormatter(logging.Formatter('%(levelname)s %(message)s'))
     logger.addHandler(file_handler)
     logger.setLevel(level=log_level)
+
     logger.info("===> Test %s started at %s" % (request.node.name, datetime.datetime.now()))
 
-    if browser_remote == "chrome":
-        options_remote = ChromeOptions()
-    elif browser_remote == "firefox":
-        options_remote = FFOptions()
-    elif browser_remote == "safari":
-        options_remote = ChromeOptions()
-
-    caps = {
-        "browserName": browser_remote,
-        "browserVersion": bv_remote,
-        "selenoid:options": {
-            "enableVNC": vnc
-        }
-    }
-
-    for k, v in caps.items():
-        options_remote.set_capability(k, v)
-
-    if launch_mode == "local":
-        if browser_local == "ch":
-            options = ChromeOptions()
-            if headless_mode:
-                options.add_argument("headless=new")
-            browser = webdriver.Chrome(service=ChromeService(), options=options)
-        elif browser_local == "ff":
-            options = FFOptions()
-            if headless_mode:
-                options.add_argument("--headless")
-            browser = webdriver.Firefox(service=FFService(), options=options)
-    elif launch_mode == "remote":
-        browser = webdriver.Remote(
-            command_executor=executor_url,
-            options=options_remote
-        )
+    if browser_name == "ch":
+        options = Options()
+        if headless_mode:
+            options.add_argument("headless=new")
+        browser = webdriver.Chrome(service=Service(), options=options)
+    elif browser_name == "ff":
+        options = FFOptions()
+        if headless_mode:
+            options.add_argument("--headless")
+        browser = webdriver.Firefox(service=FFService(), options=options)
 
     browser.maximize_window()
+
     browser.logger = logger
     browser.get(url)
     browser.url = url

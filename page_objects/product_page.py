@@ -11,7 +11,6 @@ class ProductPage(BasePage):
     RP_HEADER = By.CSS_SELECTOR, "h3"
     RP_PRODUCT = By.CLASS_NAME, "product-thumb"
 
-
     @allure.step("Open iPhone product page")
     def open_product_page_iphone(self):
         self.logger.info("Open iPhone product page")
