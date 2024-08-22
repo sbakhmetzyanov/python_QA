@@ -1,6 +1,5 @@
 import allure
 from selenium.webdriver.common.by import By
-
 from page_objects.base_page import BasePage
 
 
@@ -92,12 +91,14 @@ class AdminPage(BasePage):
         self.click(self.LOGIN_BTN)
         return self
 
+
     @allure.step("Check login success")
     def wait_logged_in(self):
         self.logger.info("Check login success")
         self.wait_url("/administration/index.php?route=common/dashboard&user_token")
         self.check_title_text("Dashboard")
         return self
+
 
     @allure.step("Logout in admin panel")
     def logout(self):

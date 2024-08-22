@@ -14,6 +14,7 @@ class CatalogDesktopsPage(BasePage):
     PRODUCT_PRICE_NEW = By.CLASS_NAME, "price-new"
     PRODUCT_PRICE_TAX = By.CLASS_NAME, "price-tax"
 
+
     @allure.step("Open the Desktops catalog page")
     def open_catalog_desktops_page(self):
         self.logger.info("Open the Desktops catalog page")
