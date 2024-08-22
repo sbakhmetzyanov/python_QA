@@ -21,11 +21,11 @@ def pytest_addoption(parser):
     )
     parser.addoption("--bv_remote", action="store", default="127.0")
     parser.addoption("--vnc", action="store_true")
-    parser.addoption("--executor", action="store", default="127.0.0.1")
+    parser.addoption("--executor", action="store", default="selenoid")
     parser.addoption(
         "--headless", action="store_true"
     )
-    parser.addoption("--url", action="store", default="http://192.168.1.75:8081")
+    parser.addoption("--url", action="store", default="http://opencart:8080")
     parser.addoption("--log_level", action="store", default="INFO")
 
 
@@ -51,9 +51,8 @@ def browser(request):
     vnc = request.config.getoption("--vnc")
     executor = request.config.getoption("--executor")
     executor_url = f"http://{executor}:4444/wd/hub"
-    log_directory = "tests/logs/"
     logger = logging.getLogger(request.node.name)
-    file_handler = logging.FileHandler(f"../{log_directory}/{request.node.name}.log")
+    file_handler = logging.FileHandler(f"tests/logs/{request.node.name}.log")
     file_handler.setFormatter(logging.Formatter('%(levelname)s %(message)s'))
     logger.addHandler(file_handler)
     logger.setLevel(level=log_level)
